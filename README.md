@@ -1,2 +1,2 @@
 # IC
-Arquivos, e codigos utilizados durante a IC
+Arquivos, e codigos utilizados/desenvolvidos durante a IC

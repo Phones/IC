@@ -136,7 +136,7 @@ class cromossomo:
         return (self.custo == other.custo and self.soma_tam_caminhos == other.soma_tam_caminhos)
 
     def eh_aceitavel(self,demanda_caminho):
-        fluxo_aresta = [ 0.0 for i in range(len(self.fluxo_aresta))]
+        fluxo_aresta = [0.0 for i in range(len(self.fluxo_aresta))]
         for cmh in range(len(demanda_caminho)):
             for e in demanda_caminho[cmh]:
                 fluxo_aresta[e] += G.demandas[cmh].routing_value
@@ -154,9 +154,9 @@ class cromossomo:
             p2 = random.randint(int(sz/2+1),sz-2)
             ord = []
             for i in range(len(self.demanda_caminho)):
-                if i<=p1 or i>p2:
+                if i <= p1 or i > p2:
                     ord.append(0)
-                elif i<=p2:
+                elif i<= p2:
                     ord.append(1)
 
             for c in range(len(self.demanda_caminho)):
@@ -196,9 +196,10 @@ class cromossomo:
         self.__calcula_soma_tamanho_caminhos()
 
 class ABC:
-    def __init__(self, nome_instancia=''):
-        self.ciclos = 10
+    def __init__(self, nome_instancia='', tempo_max_execucao=0):
+        self.ciclos = 0
         self.total_abelhas = 100
+        self.tempo_max_execucao = tempo_max_execucao
         self.quantidade_abelhas_empregadas = int(self.total_abelhas / 2)
         self.tamanho_populacao = int(self.total_abelhas / 2)
         self.limite_tentativas_por_solucao = 20
@@ -325,8 +326,8 @@ class ABC:
         for i in range(self.quantidade_abelhas_exploradoras):
             '''Caso essa fonte de alimento tenha se esgotado, envia uma abelha exploradora,
             onde ela substitui essa fonte, por uma fonte de alimento aletoria'''
-            if self.lista_limites[i] == self.limite_tentativas_por_solucao:
-                self.populacao[i] = cromossomo()
+            #if self.lista_limites[i] == self.limite_tentativas_por_solucao:
+            self.populacao[i] = cromossomo()
 
     def armazena_melhores_solucao(self, frente_pareto_solucao_atual):
         '''Caso a lista de melhores soluções esteja vazia, significa que está na primeira iteração,
@@ -365,6 +366,14 @@ class ABC:
                 self.melhores_solucoes = [] + lista_aux
 
 
+    def salva_fluxos(self):
+        aux = ''
+        arq = open("fluxos.txt", "w")
+        for m_sol in self.melhores_solucoes:
+            aux += str(m_sol.fluxo_aresta) + "\n"
+
+        arq.write(aux)
+        arq.close()
 
     def execute_abc(self):
         time_ini = time.time()
@@ -374,9 +383,10 @@ class ABC:
         # Cada cromossomo já possui o seu fitness embutido, logo não é necessario fazer a etapa de fitness da geração
         self.monta_vetor_ranks()
         self.melhores_solucoes = self.get_frente_pareto_geracao_atual()
-        cont = 0
-        while cont < self.ciclos:
-            print(f"------------------ cilco -> {cont} ------------------")
+        
+        Tinicio = time.time()
+        while (time.time() - Tinicio) < self.tempo_max_execucao:
+            print(f"------------------ ciclo -> {self.ciclos} ------------------")
             print("FASE DAS ABELHAS EMPREGADAS")
             self.fase_abelha_empregadas()
             # Monta o vetor de propabilidades
@@ -391,10 +401,11 @@ class ABC:
             print("FASE DAS ABELHAS EXPLORADORAS")
             self.fase_abelha_exploradoras()
             print("-------------------------------------------------")
-            cont += 1
+            self.ciclos += 1
 
         print(" !FIM DA EXECUÇÃO!\nMELHORES SOLUÇÕES ENCONTRADAS: ")
         self.imprime_custo_e_soma_caminho_solucao()
+        self.salva_fluxos()
 
 '''
 --------------------------------- PARAMETROS DO ABC ---------------------------------
@@ -418,5 +429,8 @@ Número de abelhas empregadas é igual ao número de soluções na população
 -> 
 '''
 
-obj = ABC("pdh.txt")
+quant_tempo_duracao = 60
+
+obj = ABC("pdh.txt", tempo_max_execucao=quant_tempo_duracao)
 obj.execute_abc()
+print("Quantidade de ciclos executados: ", obj.ciclos)

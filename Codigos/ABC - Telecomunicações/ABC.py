@@ -436,7 +436,7 @@ Número de abelhas empregadas é igual ao número de soluções na população
 -> 
 '''
 
-quant_tempo_duracao = 6
+quant_tempo_duracao = 30
 
 obj = ABC("pdh.txt", tempo_max_execucao=quant_tempo_duracao)
 obj.execute_abc()
@@ -449,6 +449,8 @@ while name != 'n' and name != 's':
 
 
 if name == 's':
+    # Cria a pasta que irá armazenar os plots
+    seleciona_nome_pasta_e_cria_pasta()
     # Desenha o grafico de todos os fluxos das soluções encontradas
     desenha_grafico_fluxo(G, obj.get_fluxos())
 

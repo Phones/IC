@@ -1,7 +1,14 @@
+import os
 from grafo_pronto import grafo
 import matplotlib.pyplot as plt
 import networkx as nx
+
+
 class visual:
+    def __init__(self):
+        self.caminho_base = os.getcwd()
+
+
     G = nx.Graph()
     node_pos = None
     node_color = None
@@ -41,6 +48,25 @@ class visual:
         self.node_pos = nx.get_node_attributes(self.G,'pos')
         print(self.G.nodes)
 
+    def seleciona_nome_pasta_e_cria_pasta(self):
+        '''Verifica os nome de pasta que já existem, e então escolhe o nome da pasta
+         com base no nome da ultima pasta criada'''
+        caminho = os.getcwd() + "/Plots/"
+        print("caminho_final: ", caminho)
+        lista_nome_pastas = os.listdir(caminho)
+        nome_pasta_nova = '0'
+        if len(lista_nome_pastas) != 0:
+            lista_nome_pastas.sort()
+            nome_pasta_nova = str(int(lista_nome_pastas[-1]) + 1)
+
+        # Monta caminho com o nome da pasta nova
+        caminho_nova_pasta = caminho + "/" + nome_pasta_nova
+        # Cria a pasta
+        os.mkdir(caminho_nova_pasta)
+
+        # Acessa pasta criada
+        os.chdir(caminho_nova_pasta)
+
     def plot(self):
         '''
         nx.draw_networkx(self.G,self.node_pos,with_labels=False,node_color=self.node_color,node_size=300)
@@ -52,6 +78,7 @@ class visual:
         nx.draw_networkx_edges(self.G, self.node_pos, edge_color=self.edge_color)
         nx.draw_networkx_labels(self.G, self.node_pos, self.node_label)
         nx.draw_networkx_edge_labels(self.G,self.node_pos,edge_labels=self.edge_label)
+        plt.savefig('teste1.png')
         plt.show()
 
     def generate_solution_nodes(self,solution_edges,Gra):
@@ -66,9 +93,14 @@ class visual:
             if not n2 in self.solution_nodes:
                 self.solution_nodes.append(n2)
 
-    def __init__(self,Gra,solution_edges):
+    def plota_grafico(self, Gra, solution_edges):
         self.generate_solution_nodes(solution_edges,Gra)
         self.nodes(Gra,self.solution_nodes)
         self.edges(Gra,solution_edges)
+        self.seleciona_nome_pasta_e_cria_pasta()
         self.plot()
+        # Volta para o caminho original
+        os.chdir(self.caminho_base)
+        
+
 

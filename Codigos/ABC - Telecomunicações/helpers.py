@@ -7,3 +7,5 @@ def imprime_lista_um_por_linha(lista):
 		print(pos)
 
 	linha()
+
+

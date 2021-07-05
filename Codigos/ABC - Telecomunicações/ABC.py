@@ -4,6 +4,7 @@ import random
 from time import sleep
 from grafo_pronto import grafo
 from helpers import *
+from desenha_rede import *
 
 G = grafo('pdh.txt')
 random.seed(None)
@@ -198,6 +199,7 @@ class cromossomo:
 class ABC:
     def __init__(self, nome_instancia='', tempo_max_execucao=0):
         self.ciclos = 0
+        self.todos_fluxos = []
         self.total_abelhas = 100
         self.tempo_max_execucao = tempo_max_execucao
         self.quantidade_abelhas_empregadas = int(self.total_abelhas / 2)
@@ -371,9 +373,14 @@ class ABC:
         arq = open("fluxos.txt", "w")
         for m_sol in self.melhores_solucoes:
             aux += str(m_sol.fluxo_aresta) + "\n"
+            self.todos_fluxos.append(m_sol.fluxo_aresta)
 
         arq.write(aux)
         arq.close()
+
+
+    def get_fluxos(self):
+        return [self.todos_fluxos[0]]
 
     def execute_abc(self):
         time_ini = time.time()
@@ -429,8 +436,19 @@ Número de abelhas empregadas é igual ao número de soluções na população
 -> 
 '''
 
-quant_tempo_duracao = 60
+quant_tempo_duracao = 6
 
 obj = ABC("pdh.txt", tempo_max_execucao=quant_tempo_duracao)
 obj.execute_abc()
 print("Quantidade de ciclos executados: ", obj.ciclos)
+
+name = ''
+while name != 'n' and name != 's':
+    name = input("Plotar o gráfico?(s/n)").lower()
+    print(name)
+
+
+if name == 's':
+    # Desenha o grafico de todos os fluxos das soluções encontradas
+    desenha_grafico_fluxo(G, obj.get_fluxos())
+

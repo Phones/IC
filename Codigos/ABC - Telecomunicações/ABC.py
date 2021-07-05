@@ -380,7 +380,7 @@ class ABC:
 
 
     def get_fluxos(self):
-        return [self.todos_fluxos[0]]
+        return self.todos_fluxos
 
     def execute_abc(self):
         time_ini = time.time()

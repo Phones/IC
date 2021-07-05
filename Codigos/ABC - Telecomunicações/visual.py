@@ -45,7 +45,7 @@ class visual:
         self.node_pos = nx.get_node_attributes(self.G,'pos')
         print(self.G.nodes)
 
-    def plot(self):
+    def plot(self, numero_fluxo):
         '''
         nx.draw_networkx(self.G,self.node_pos,with_labels=False,node_color=self.node_color,node_size=300)
         nx.draw_networkx_edges(self.G,self.node_pos,edge_color=self.edge_color)
@@ -56,7 +56,7 @@ class visual:
         nx.draw_networkx_edges(self.G, self.node_pos, edge_color=self.edge_color)
         nx.draw_networkx_labels(self.G, self.node_pos, self.node_label)
         nx.draw_networkx_edge_labels(self.G,self.node_pos,edge_labels=self.edge_label)
-        plt.savefig('plot_fluxo.png')
+        plt.savefig('plot_fluxo_' + str(numero_fluxo) + '.png')
         plt.show()
 
     def generate_solution_nodes(self,solution_edges,Gra):
@@ -71,10 +71,10 @@ class visual:
             if not n2 in self.solution_nodes:
                 self.solution_nodes.append(n2)
 
-    def plota_grafico(self, Gra, solution_edges):
+    def plota_grafico(self, Gra, solution_edges, numero_fluxo):
         self.generate_solution_nodes(solution_edges,Gra)
         self.nodes(Gra,self.solution_nodes)
         self.edges(Gra,solution_edges)
-        self.plot()
+        self.plot(numero_fluxo)
 
 

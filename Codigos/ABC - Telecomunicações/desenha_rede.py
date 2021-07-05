@@ -31,7 +31,7 @@ def seleciona_nome_pasta_e_cria_pasta():
 
 def desenha_grafico_fluxo(grafo, lista_lista_fluxos):
 	obj = visual()
-	for fluxo in lista_lista_fluxos:
-		obj.plota_grafico(grafo, fluxo)
+	for i in range(len(lista_lista_fluxos)):
+		obj.plota_grafico(grafo, lista_lista_fluxos[i], i)
 
 	print("Fim do plot de todos os fluxos!")

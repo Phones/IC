@@ -1,0 +1,8 @@
+ciclos: 161
+total_abelhas: 200
+tempo_max_execucao: 600
+quantidade_abelhas_empregadas: 100
+tamanho_populacao: 100
+limite_tentativas_por_solucao: 20
+quantidade_abelhas_observadoras: 100
+quantidade_abelhas_exploradoras: 100

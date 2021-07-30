@@ -1,0 +1,315 @@
+uai
+Instancia processada
+nos processados
+links processados
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+UNLIMITED
+demandas processadas
+matriz adjacencia capacidade pronta
+matriz adjacencia custo pronta
+caminhos da demanda 0 gerados, quantidade: 10
+caminhos da demanda 1 gerados, quantidade: 10
+caminhos da demanda 2 gerados, quantidade: 10
+caminhos da demanda 3 gerados, quantidade: 10
+caminhos da demanda 4 gerados, quantidade: 10
+caminhos da demanda 5 gerados, quantidade: 10
+caminhos da demanda 6 gerados, quantidade: 10
+caminhos da demanda 7 gerados, quantidade: 10
+caminhos da demanda 8 gerados, quantidade: 10
+caminhos da demanda 9 gerados, quantidade: 10
+caminhos da demanda 10 gerados, quantidade: 10
+caminhos da demanda 11 gerados, quantidade: 10
+caminhos da demanda 12 gerados, quantidade: 10
+caminhos da demanda 13 gerados, quantidade: 10
+caminhos da demanda 14 gerados, quantidade: 10
+caminhos da demanda 15 gerados, quantidade: 10
+caminhos da demanda 16 gerados, quantidade: 10
+caminhos da demanda 17 gerados, quantidade: 10
+caminhos da demanda 18 gerados, quantidade: 10
+caminhos da demanda 19 gerados, quantidade: 10
+caminhos da demanda 20 gerados, quantidade: 10
+caminhos da demanda 21 gerados, quantidade: 10
+caminhos da demanda 22 gerados, quantidade: 10
+caminhos da demanda 23 gerados, quantidade: 10
+Caminhos gerados
+gerando populacao
+Populacao gerada
+Custo:  39009218.0
+Ranks:  11
+soma_tam_caminhos:  59
+Custo:  37998646.0
+Ranks:  13
+soma_tam_caminhos:  63
+Custo:  36876517.0
+Ranks:  11
+soma_tam_caminhos:  62
+Custo:  37636576.0
+Ranks:  12
+soma_tam_caminhos:  61
+Custo:  37841502.0
+Ranks:  10
+soma_tam_caminhos:  59
+Custo:  37158963.0
+Ranks:  9
+soma_tam_caminhos:  59
+Custo:  41922366.0
+Ranks:  16
+soma_tam_caminhos:  67
+Custo:  34733398.0
+Ranks:  7
+soma_tam_caminhos:  63
+Custo:  36661340.0
+Ranks:  12
+soma_tam_caminhos:  64
+Custo:  36075810.0
+Ranks:  9
+soma_tam_caminhos:  62
+Custo:  36365285.0
+Ranks:  11
+soma_tam_caminhos:  63
+Custo:  37573555.0
+Ranks:  12
+soma_tam_caminhos:  62
+Custo:  40724647.0
+Ranks:  14
+soma_tam_caminhos:  61
+Custo:  38364937.0
+Ranks:  8
+soma_tam_caminhos:  57
+Custo:  36775269.0
+Ranks:  13
+soma_tam_caminhos:  64
+Custo:  34599845.0
+Ranks:  5
+soma_tam_caminhos:  57
+Custo:  36530717.0
+Ranks:  8
+soma_tam_caminhos:  59
+Custo:  37590484.0
+Ranks:  8
+soma_tam_caminhos:  58
+Custo:  36209574.0
+Ranks:  9
+soma_tam_caminhos:  61
+Custo:  40668838.0
+Ranks:  14
+soma_tam_caminhos:  62
+Custo:  37378958.0
+Ranks:  14
+soma_tam_caminhos:  65
+Custo:  37421472.0
+Ranks:  11
+soma_tam_caminhos:  60
+Custo:  30972545.0
+Ranks:  1
+soma_tam_caminhos:  56
+Custo:  40192052.0
+Ranks:  13
+soma_tam_caminhos:  61
+Custo:  33185103.0
+Ranks:  2
+soma_tam_caminhos:  54
+Custo:  33975422.0
+Ranks:  4
+soma_tam_caminhos:  57
+Custo:  41214537.0
+Ranks:  6
+soma_tam_caminhos:  56
+Custo:  38614136.0
+Ranks:  10
+soma_tam_caminhos:  58
+Custo:  33433393.0
+Ranks:  3
+soma_tam_caminhos:  57
+Custo:  32112647.0
+Ranks:  2
+soma_tam_caminhos:  57
+Custo:  31340982.0
+Ranks:  1
+soma_tam_caminhos:  53
+Custo:  40525565.0
+Ranks:  12
+soma_tam_caminhos:  59
+Custo:  34527369.0
+Ranks:  3
+soma_tam_caminhos:  55
+Custo:  34602297.0
+Ranks:  6
+soma_tam_caminhos:  61
+Custo:  37793339.0
+Ranks:  9
+soma_tam_caminhos:  58
+Custo:  40694240.0
+Ranks:  16
+soma_tam_caminhos:  68
+Custo:  29738256.0
+Ranks:  1
+soma_tam_caminhos:  59
+Custo:  36194301.0
+Ranks:  10
+soma_tam_caminhos:  62
+Custo:  31251210.0
+Ranks:  1
+soma_tam_caminhos:  55
+Custo:  35788884.0
+Ranks:  8
+soma_tam_caminhos:  61
+Custo:  35779277.0
+Ranks:  6
+soma_tam_caminhos:  57
+Custo:  40926952.0
+Ranks:  15
+soma_tam_caminhos:  62
+Custo:  39131020.0
+Ranks:  15
+soma_tam_caminhos:  65
+Custo:  38127761.0
+Ranks:  5
+soma_tam_caminhos:  56
+Custo:  35788436.0
+Ranks:  7
+soma_tam_caminhos:  57
+Custo:  37227111.0
+Ranks:  10
+soma_tam_caminhos:  60
+Custo:  39411981.0
+Ranks:  14
+soma_tam_caminhos:  63
+Custo:  35676772.0
+Ranks:  6
+soma_tam_caminhos:  60
+Custo:  36520582.0
+Ranks:  8
+soma_tam_caminhos:  60
+Custo:  35501414.0
+Ranks:  4
+soma_tam_caminhos:  55
+------------------ ciclo -> 0 ------------------
+FASE DAS ABELHAS EMPREGADAS
+FASE DAS ABELHAS CALCULA VETOR DE PIS
+FASE DAS ABELHAS OBERSADORAS
+vetor ranks:  [9, 5, 3, 7, 4, 13, 8, 1, 5, 1, 2, 6, 1, 2, 10, 14, 6, 15, 7, 1, 9, 3, 10, 13, 1, 5, 8, 14, 8, 2, 7, 5, 11, 1, 5, 6, 10, 15, 12, 4, 7, 6, 16, 2, 8, 1, 8, 2, 9, 4]
+FASE DAS ABELHAS EXPLORADORAS
+-------------------------------------------------
+------------------ ciclo -> 1 ------------------
+FASE DAS ABELHAS EMPREGADAS
+FASE DAS ABELHAS CALCULA VETOR DE PIS
+FASE DAS ABELHAS OBERSADORAS
+vetor ranks:  [5, 1, 2, 15, 3, 3, 2, 14, 6, 3, 1, 5, 7, 11, 15, 3, 10, 3, 6, 14, 2, 8, 4, 3, 8, 8, 12, 5, 3, 13, 11, 5, 1, 11, 6, 16, 1, 4, 14, 2, 7, 9, 6, 10, 4, 7, 4, 1, 9, 4]
+FASE DAS ABELHAS EXPLORADORAS
+-------------------------------------------------
+------------------ ciclo -> 2 ------------------
+FASE DAS ABELHAS EMPREGADAS
+FASE DAS ABELHAS CALCULA VETOR DE PIS
+FASE DAS ABELHAS OBERSADORAS
+vetor ranks:  [3, 1, 7, 1, 10, 1, 5, 8, 14, 1, 2, 4, 2, 12, 7, 3, 1, 15, 4, 9, 10, 10, 11, 11, 13, 9, 12, 6, 5, 16, 8, 18, 1, 11, 1, 5, 15, 2, 17, 5, 1, 7, 9, 2, 2, 8, 13, 18, 3, 6]
+FASE DAS ABELHAS EXPLORADORAS
+-------------------------------------------------
+------------------ ciclo -> 3 ------------------
+FASE DAS ABELHAS EMPREGADAS
+FASE DAS ABELHAS CALCULA VETOR DE PIS
+FASE DAS ABELHAS OBERSADORAS
+vetor ranks:  [4, 8, 2, 11, 11, 9, 2, 1, 1, 6, 7, 11, 11, 10, 6, 7, 12, 1, 3, 13, 4, 1, 1, 8, 7, 3, 10, 6, 5, 7, 3, 3, 12, 2, 3, 6, 5, 10, 4, 6, 5, 9, 5, 4, 14, 2, 1, 4, 8, 4]
+FASE DAS ABELHAS EXPLORADORAS
+-------------------------------------------------
+------------------ ciclo -> 4 ------------------
+FASE DAS ABELHAS EMPREGADAS
+FASE DAS ABELHAS CALCULA VETOR DE PIS
+FASE DAS ABELHAS OBERSADORAS
+vetor ranks:  [4, 3, 2, 6, 11, 12, 1, 12, 12, 2, 10, 5, 5, 3, 2, 6, 14, 15, 13, 1, 9, 1, 5, 1, 6, 14, 6, 8, 16, 4, 9, 2, 1, 7, 13, 2, 15, 14, 8, 17, 3, 3, 18, 1, 2, 13, 4, 4, 7, 11]
+FASE DAS ABELHAS EXPLORADORAS
+-------------------------------------------------
+------------------ ciclo -> 5 ------------------
+FASE DAS ABELHAS EMPREGADAS
+FASE DAS ABELHAS CALCULA VETOR DE PIS
+FASE DAS ABELHAS OBERSADORAS
+vetor ranks:  [13, 3, 13, 2, 8, 13, 4, 11, 15, 8, 5, 15, 6, 9, 4, 7, 1, 1, 6, 12, 14, 1, 5, 5, 2, 3, 4, 1, 7, 3, 12, 9, 1, 3, 2, 1, 3, 5, 1, 2, 6, 14, 6, 11, 10, 14, 6, 2, 7, 13]
+FASE DAS ABELHAS EXPLORADORAS
+-------------------------------------------------
+ !FIM DA EXECUÇÃO!
+MELHORES SOLUÇÕES ENCONTRADAS: 
+----------------------------------------------
+SOLUÇÃO, Custo:  16823783.0
+SOLUÇÃO, soma_tam_caminhos:  27
+SOLUÇÃO, Custo:  19459526.0
+SOLUÇÃO, soma_tam_caminhos:  24
+SOLUÇÃO, Custo:  18458545.0
+SOLUÇÃO, soma_tam_caminhos:  25
+SOLUÇÃO, Custo:  15631210.0
+SOLUÇÃO, soma_tam_caminhos:  30
+SOLUÇÃO, Custo:  18517195.0
+SOLUÇÃO, soma_tam_caminhos:  25
+SOLUÇÃO, Custo:  15902545.0
+SOLUÇÃO, soma_tam_caminhos:  30
+SOLUÇÃO, Custo:  17673039.0
+SOLUÇÃO, soma_tam_caminhos:  26
+SOLUÇÃO, Custo:  17763564.0
+SOLUÇÃO, soma_tam_caminhos:  26
+SOLUÇÃO, Custo:  16656176.0
+SOLUÇÃO, soma_tam_caminhos:  28
+SOLUÇÃO, Custo:  16945173.0
+SOLUÇÃO, soma_tam_caminhos:  27
+SOLUÇÃO, Custo:  15964327.0
+SOLUÇÃO, soma_tam_caminhos:  29
+SOLUÇÃO, Custo:  16962518.0
+SOLUÇÃO, soma_tam_caminhos:  29
+SOLUÇÃO, Custo:  17140248.0
+SOLUÇÃO, soma_tam_caminhos:  27
+SOLUÇÃO, Custo:  18436870.0
+SOLUÇÃO, soma_tam_caminhos:  26
+----------------------------------------------
+Quantidade de ciclos executados:  6
+caminho_final:  /mnt/c/Users/paulo/Desktop/preciso_suportar_mais_alguns_dias/teste/teste/Plots/
+[0]
+/mnt/c/Users/paulo/Desktop/preciso_suportar_mais_alguns_dias/teste/teste/Plots/1
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+34
+Fim do plot de todos os fluxos!
